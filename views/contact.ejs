@@ -1,0 +1,108 @@
+<% include ./partials/header %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/stylesheets/contact.css">
+<body>
+<div class="containMain">
+<nav id="nav" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+    </div> 
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+       <li><a href="/"> HOME</a></li>
+       <li><a href="/about"> ABOUT</a></li>
+       <li><a href="/faq"> FAQ</a></li>
+       <li class="active"><a href="/contact"> CONTACT</a></li>
+       <li><a href="/dataVisualisation"> DATA VISUALISATION</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class= "row">
+    <div id="contact-header">
+        <h1>Contact Us</h1>
+    </div>   
+</div>
+
+<div class= "row">
+    <div class="wrapper">
+        <div class="roles">
+            <div>
+                I am a web developer.
+            </div>
+
+            <div>
+                I am a game creator.
+            </div>
+
+            <div>
+                I am a student.
+            </div>
+
+            <div>
+                I am an aspiring individual.
+            </div>
+        </div>
+    </div>    
+</div>
+<div class = "row">
+    <div id="contact-form">
+        <form id="conForm" action="/contact" method="post">
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab show">Name:
+                <input placeholder="First name..." oninput="this.className = ''">
+                <input placeholder="Last name..." oninput="this.className = ''">
+            </div>
+            
+            <div class="tab hide">Contact Info:
+                <input type="email" placeholder="E-mail..." oninput="this.className = ''">
+                <input placeholder="Phone..." oninput="this.className = ''">
+            </div>
+        
+            <div class="tab hide">Message:
+                <!--<input placeholder="Write down the message you want tell us..." oninput="this.className = ''">-->
+                <textarea style="height:80px;" placeholder="Write down the message you want tell us..."></textarea>
+            </div>
+            
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" class = "btn" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" class = "btn" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+            </div>
+            
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center; margin-top:40px;">
+                <span class="step"></span>    
+                <span class="step"></span>    
+                <span class="step"></span>    
+            </div>
+        </form>    
+    </div>
+
+
+    <!--<form>-->
+    <!--    <input type="text" placeholder="Name">-->
+    <!--    <input type="text" placeholder="E-Mail">-->
+    <!--    <input type="text" placeholder="Message">-->
+    <!--    <button class="btn waves-effect waves-light" type="submit" name="action">LET'S TALK  <i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>-->
+    <!--</form>-->
+</div>
+<div class="push"></div>
+</div>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src="/model/contact.js"></script>
+
+<% include ./partials/footer %>

@@ -1,0 +1,139 @@
+
+body{
+    line-height: normal;
+}
+
+.row{
+    margin: 0;
+}
+
+@media (max-width: 768px){
+    nav ul li{
+        width: 100%;
+    }
+}
+
+button{
+    outline:0 none !important;
+}
+
+.col-2{
+    z-index: -1;
+}
+
+.waves-effect{
+    z-index: -1;
+}
+
+.collapsible-header{
+   font-weight: bold; 
+}
+
+.collapsible-body h1{
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.collapsible-body ul{
+    margin: 10px;
+}
+
+.collapsible-body p{
+    margin:10px;
+}
+
+.collapsible-body ul:not(.browser-default)>li{
+    margin: 5px 20px;
+    list-style: disc;
+}
+
+.navbar-default .navbar-nav>li>a.faq{
+    color: #424242;
+}
+
+.faq{
+    font-weight: bold;
+}
+
+/*.container{*/
+/*    margin-left: 10px;*/
+/*}*/
+
+
+
+
+.container{
+    width: 100%;
+    /*margin: 0 5%;*/
+    /*text-align: center;*/
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+    /*margin-bottom: 60px;*/
+}
+
+.row:before,
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-']{
+    float: left;
+    min-height: 1px;
+    width:33.33%;
+    padding:12px;
+}
+
+.col-1{
+    width: 33.33%;
+}
+
+.col-2{
+    width:66.66%;
+}
+
+.col-3{
+    width:100%;
+}
+
+@media all and (max-width:800px){
+    .col-1{
+        width: 100%;
+    }    
+    
+    .col-2{
+        width: 100%;
+    }
+    
+    .col-3{
+        width:100%;
+    }
+    
+    .chatbotContanier{
+        border-radius: 5px;
+        height: 550px;
+        background-color: #263238;
+    }
+}
+
+@media all and (min-width:800px){
+
+    .chatbotContanier{
+        border-radius: 5px;
+        bottom: 10px;
+        position: block;
+        position: fixed;
+        background-color: #263238;
+        top: 100px;
+        right: 10px;
+        bottom: 5rem;
+    }
+    
+}
+
+/*.chatbotDiv{*/
+/*    background-color: blue;*/
+    /*width: 100%;*/
+    /*height:100%;*/
+/*}*/

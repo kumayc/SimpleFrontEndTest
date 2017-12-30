@@ -1,0 +1,33 @@
+body {
+  background: #f1f8e9;
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.container{
+  margin: 60px auto;
+}
+
+h1{
+  font-size: 35;
+}
+
+p{
+  font-size: 20px;
+}
+
+#submitIcon{
+  margin: 40px auto;
+  text-align: center;
+}
+
+#submitIcon a{
+  width: 100px;
+  height: 100px;
+}
+
+.fa-lg{
+  font-size: 8em;
+  color: #1b5e20;
+}

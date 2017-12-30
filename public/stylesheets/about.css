@@ -1,0 +1,118 @@
+.title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#map {
+    height: 380px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #bdbdbd;
+}
+
+.mapInfo {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+
+.mapInfo ul li i{
+    width: 20px;
+}
+
+.mapInfo ul li span{
+    font-weight: 800;
+}
+
+img{
+    height:400px;
+    width: 100%;
+    text-align: center;
+}
+
+hr {
+    margin: 40px auto;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+h1{
+    color: #37474f ;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.mainText{
+    color: #616161;
+    /*font-family: 'Vidaloka', serif;*/
+}
+
+.about{
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a.about{
+    color: #424242;
+}
+
+.container{
+   width: 90%; 
+}
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}

@@ -1,0 +1,56 @@
+<% include partials/header %>
+<link rel="stylesheet" href="/stylesheets/home.css">
+<body>
+  <div class="containMain">
+  <nav id="nav" class="navbar navbar-inverse">
+    <div class="container-fluid">
+      
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+      </div> 
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         <li class="active"><a href="/"> HOME</a></li>
+         <li><a href="/about"> ABOUT</a></li>
+         <li><a href="/faq"> FAQ</a></li>
+         <li><a href="/contact"> CONTACT</a></li>
+         <li><a href="/dataVisualisation"> DATA VISUALISATION</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <h1 class="title">Welcome to Melbourne Bank</h1>
+  
+  <div id="cards" class="containerCards">
+    <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
+      <h1 slot="header">Department One</h1>
+      <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </card>
+    <card data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+      <h1 slot="header">Department Two</h1>
+      <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </card>
+    <card data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+      <h1 slot="header">Department Three</h1>
+      <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </card>
+    <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
+      <h1 slot="header">Department Four</h1>
+      <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </card>
+  </div>  
+<div class="push"></div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src="/model/home.js"></script>
+
+<% include partials/footer %>

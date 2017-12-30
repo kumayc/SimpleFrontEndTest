@@ -1,0 +1,107 @@
+<% include ./partials/header %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel="stylesheet" href="/stylesheets/faq.css">
+<body>
+  
+<div class="containMain">
+<nav id="nav" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+    </div> 
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+       <li><a href="/"> HOME</a></li>
+       <li><a href="/about"> ABOUT</a></li>
+       <li class="active"><a href="/faq"> FAQ</a></li>
+       <li><a href="/contact"> CONTACT</a></li>
+       <li><a href="/dataVisualisation"> DATA VISUALISATION</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-2">
+            <br /><br />
+              <button id="expandAll" class="waves-light btn" onClick="expandAll();"><i class="material-icons left">fullscreen</i>Expand All</button>
+              <button id="collapseAll" class="waves-light btn" onClick="collapseAll();"><i class="material-icons left">fullscreen_exit</i>Collapse All</button>
+            <br /><br />
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                      <div class="collapsible-header"><i class="fa fa-angle-right" aria-hidden="true"></i>Where can I find information about preservation of old books?</div>
+                      <div class="collapsible-body">
+                          <h1>There are a number of websites which provide basic and advanced guides to help you keep your books in their best condition.</h1>
+                          <ul>
+                              <li>
+                                  <a href="#">Preserving information</a>
+                              </li>
+                              <li>
+                                  <a href="#">Conservation guides</a>
+                              </li>
+                              <li>
+                                  <a href="#">Collection preservation advice</a>
+                          </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="fa fa-angle-right" aria-hidden="true"></i>How can I find Australian Government publications?</div>
+                      <div class="collapsible-body">
+                          <h1>There are a number of websites that will help you find Australian Government publications:</h1>
+                          <ul>
+                              <li>
+                                  <a href="#">GovPubs - the Australian Government Publications Guide</a>
+                              </li>
+                              <li>
+                                  <a href="#">Australian Government - Publications</a>
+                              </li>
+                              <li>
+                                  <a href="#">GovRAP</a>
+                          </ul>                      
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="fa fa-angle-right" aria-hidden="true"></i>Where can I find information on child and youth rights?</div>
+                      <div class="collapsible-body">
+                          <p>The National Children's and Youth Law Centre's website Lawstuff provides advice and information to children and young people, their parents and advocates and the wider community, about young people's legal rights and responsibilities.</p>
+                          <p>The Australian Human Rights Commission provide information on <a href="#">children's rights</a> both in Australia and overseas.</p>
+                          <p><a href="#">Youth Central</a> is the Victorian Government's web-based initiative for young people aged 12-25 and includes a section on <a href="#">Know Your Rights</a>.</p>
+                          <p>The <a href="#">Legal Information Access Centre</a> is a free legal information service for all members of the community in NSW. The website includes information for <a href="#">children and young people</a>.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="fa fa-angle-right" aria-hidden="true"></i>How does Australia assist developing countries with overseas aid?</div>
+                      <div class="collapsible-body">
+                          <p>The Australian Government <a href="#">Australian Aid</a> website contains a full list of the countries to which Australia provides aid. The site also provides information on Australia's bilateral and regional programs in those countries with which Australia has a development partnership. Information on partnerships with a wide range of groups such as regional governments, non-government organisations (NGOs), and Australian volunteer organisations is also available.</p>
+                      </div>
+                    </li>                
+                </ul>            
+        </div>
+        <div class="col-1 chatbotContanier">
+          <iframe
+              width="100%"
+              height="100%"
+              src="https://console.dialogflow.com/api-client/demo/embedded/d94c656c-5099-4e99-ab54-ae9e0d5f4183">
+          </iframe>
+        </div>
+    </div>
+  </div> 
+  <div class="push"></div>
+</div>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!--<script src='https://code.jquery.com/jquery-2.0.0.js'></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <script  src="/model/faq.js"></script>
+
+<% include ./partials/footer %>

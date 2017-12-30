@@ -1,0 +1,53 @@
+<% include ./partials/header %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="/stylesheets/visualisation.css">
+<body>
+<div class="containMain">  
+<nav id="nav" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+    </div> 
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+       <li><a href="/"> HOME</a></li>
+       <li><a href="/about"> ABOUT</a></li>
+       <li><a href="/faq"> FAQ</a></li>
+       <li><a href="/contact"> CONTACT</a></li>
+       <li class="active"><a href="/dataVisualisation"> DATA VISUALISATION</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+
+<div class="container">
+  <div class="row">
+    <div id="tab">
+      <div class="col-1 list-group">
+        <button type = "button" class="list-group-item list-group-item-action active">Line Chart</button>
+        <button type = "button" class="list-group-item list-group-item-action">Polar area chart</button>
+        <button type = "button" class="list-group-item list-group-item-action">Mixed Chart</button>
+      </div>
+      <div class="col-3">
+        <canvas class = "show" id="line-chart" width="800" height="450" ></canvas>
+        <canvas class = "hide" id="polar-chart" width="800" height="450"></canvas>
+        <canvas class = "hide" id="mixed-chart" width="800" height="450"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="push"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script type="text/javascript" src="www.chartjs.org/assets/Chart.js"></script>
+<script src="/model/visualisation.js"></script>
+<% include ./partials/footer %>
+
