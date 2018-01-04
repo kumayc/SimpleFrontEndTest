@@ -32,6 +32,6 @@ app.get("/hello", function(req, res) {
     res.render("hello");
 })
 
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("The chat_box server started!");
+app.listen(process.env.PORT || 3000, function(){
+    console.log("The code test server started!");
 });
